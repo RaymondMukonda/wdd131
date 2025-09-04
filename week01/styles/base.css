@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -35,14 +35,15 @@ text-align: center;
 
 nav {
     background-color: black;
+   
 }
 
 nav ul {
-  margin-top: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+    display: flex;
+    margin-top: 0;
+    list-style: none;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 nav a {
