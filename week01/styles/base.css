@@ -34,6 +34,7 @@ text-align: center;
 }
 
 nav {
+    justify-content: space-around;
     background-color: black;
    
 }
