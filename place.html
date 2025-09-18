@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madagascar</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Madagascar</h1>
+  </header>
+
+  <main>
+    <!-- HERO IMAGE -->
+    <picture>
+      <source srcset="images/madagascar-large.webp" media="(min-width: 780px)">
+      <img src="images/madagascar-small.webp" alt="Lemurs in Madagascar" class="hero">
+    </picture>
+
+    <!-- DATA & WEATHER (MOBILE: STACKED | DESKTOP: SIDE BY SIDE) -->
+    <section class="info">
+      <div class="data">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 587,041 sq km</li>
+          <li><strong>Population:</strong> 27.9 million</li>
+          <li><strong>Capital:</strong> Antananarivo</li>
+          <li><strong>Languages:</strong> Malagasy, French</li>
+          <li><strong>Currency:</strong> Malagasy Ariary</li>
+          <li><strong>Time Zone:</strong> UTC+3</li>
+          <li><strong>Calling Code:</strong> +261</li>
+          <li><strong>Internet TLD:</strong> .mg</li>
+        </ul>
+      </div>
+
+      <div class="weather">
+        <h2>Weather</h2>
+        <!-- SVG on mobile / pseudo-element on wide view -->
+        <img src="images/partly-cloudy.svg" alt="Weather Icon" class="weather-icon">
+        <p><strong>Temperature:</strong> 10°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 5 km/h S</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Your Name | Madagascar</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
